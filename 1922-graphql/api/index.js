@@ -1,22 +1,17 @@
-const { ApolloServer, gql } = require("apollo-server")
+const { ApolloServer } = require('apollo-server')
+const userSchema = require('./user/schema/user.graphql')
+const userResolvers = require('./user/resolvers/userResolver')
 
-const users = [
-  {
-    nome: "Ana",
-    ativo: true
-  },
-  {
-    nome: "Marcia",
-    ativo: false
-  }
-]
+const typeDefs = [userSchema]
+const resolvers = [userResolvers] 
 
-const typeDefs = gql `
-  type User {
-    nome: String!
-    ativo: Boolean!
-    email: String
-  }
-`
+const server = new ApolloServer({ typeDefs, resolvers })
 
-const server = new ApolloServer({ typeDefs, nodeEnv })
+server.listen().then(({url}) => {
+  console.log(`Servidor rodando na porta ${url}`)
+})
+
+// Caso queira rodar em outra porta que não seja a padrão do graphQL, usar o camando abaixo
+// server.listen({port: 4001}).then(({}) => {
+//   console.log(`Servidor rodando na porta ${url}`)
+// })
