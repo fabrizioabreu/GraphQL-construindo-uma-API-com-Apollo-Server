@@ -22,13 +22,6 @@
       "role": 1
     },
     {
-      "id": 4,
-      "nome": "Carlos Marques",
-      "ativo": true,
-      "email": "c@c.com",
-      "role": 2
-    },
-    {
       "id": 5,
       "nome": "Silvia Souza",
       "ativo": true,
@@ -43,11 +36,11 @@
       "role": 2
     },
     {
-      "nome": "Fabrizio Abreu",
+      "id": 7,
+      "nome": "Fabrizio Queiroz",
       "ativo": true,
-      "email": "fabrizio@email.com",
-      "role": 2,
-      "id": 7
+      "email": "queiroz@email.com",
+      "role": 1
     }
   ],
   "roles": [
