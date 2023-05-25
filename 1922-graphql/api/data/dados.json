@@ -41,6 +41,13 @@
       "ativo": true,
       "email": "m@m.com",
       "role": 2
+    },
+    {
+      "nome": "Fabrizio Abreu",
+      "ativo": true,
+      "email": "fabrizio@email.com",
+      "role": 2,
+      "id": 7
     }
   ],
   "roles": [

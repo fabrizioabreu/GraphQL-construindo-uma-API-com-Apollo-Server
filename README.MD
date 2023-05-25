@@ -6,6 +6,7 @@ GraphQL: construindo uma API com Apollo Server.
 - Node.js
 - GraphQL
 - Apollo Server  https://www.apollographql.com/docs/apollo-server/
+- Rest
 
 ## Inicialização
 ```sh

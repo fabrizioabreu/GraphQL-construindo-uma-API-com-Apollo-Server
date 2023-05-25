@@ -22,7 +22,7 @@ const userSchema = gql `
     adicionarUser(
       nome: String!,
       ativo: Boolean!,
-      email: String,
+      email: String!,
       role: String!
     ): User!
   }
