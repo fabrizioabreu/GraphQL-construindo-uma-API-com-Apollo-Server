@@ -8,8 +8,8 @@ const userSchema = gql `
   }
 
   type Query {
-    users: [User]
-    primeiroUser: User
+    users: [User],
+    user(id: ID!): User!
   }
 `
 

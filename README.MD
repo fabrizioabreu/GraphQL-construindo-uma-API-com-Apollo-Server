@@ -14,6 +14,9 @@ npm install
 
 # Navegue pelo terminal até a pasta raiz do projeto
 npx json-server --watch api/data/dados.json
+
+# Inicializar o projeto
+npm start
 ```
 
 ## Dependências instaladas
@@ -26,4 +29,6 @@ npm install graphql
 # Instalação do Apollo Server
 npm install apollo-server
 
+# Datasource
+npm install apollo-datasource-rest
 ```
