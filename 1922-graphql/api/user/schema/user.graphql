@@ -13,7 +13,13 @@ scalar DateTime
 
   type Role {
     id: ID!
-    type: String!
+    type: RolesType!
+  }
+
+  enum RolesType {
+    ESTUDANTE
+    DOCENTE
+    COORDENACAO
   }
 
   type Query {
@@ -26,7 +32,7 @@ scalar DateTime
       nome: String!,
       ativo: Boolean!,
       email: String!,
-      role: String!,
+      role: RolesType!,
       createdAt: DateTime
     ): User!
 
@@ -35,7 +41,7 @@ scalar DateTime
       nome: String!,
       ativo: Boolean!,
       email: String!,
-      role: String!
+      role: RolesType!
     ): User!
 
     deletaUser(

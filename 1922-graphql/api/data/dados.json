@@ -49,6 +49,22 @@
       "role": 1,
       "createdAt": "2023-05-05T00:00:00.000Z",
       "id": 7
+    },
+    {
+      "nome": "Maria de Lourdes",
+      "ativo": true,
+      "email": "lourdes@email.com",
+      "role": 2,
+      "createdAt": "2023-05-05T00:00:00.000Z",
+      "id": 8
+    },
+    {
+      "nome": "Rui P. de Abreu",
+      "ativo": true,
+      "email": "rui@email.com",
+      "role": 2,
+      "createdAt": "2023-05-05T00:00:00.000Z",
+      "id": 9
     }
   ],
   "roles": [
