@@ -11,6 +11,14 @@ scalar DateTime
     createdAt: DateTime
   }
 
+  input UserInput {
+    nome: String
+    ativo: Boolean
+    email: String
+    role: RolesType
+    createdAt: DateTime
+  }
+
   type Role {
     id: ID!
     type: RolesType!
@@ -29,19 +37,12 @@ scalar DateTime
 
   type Mutation {
     adicionarUser(
-      nome: String!,
-      ativo: Boolean!,
-      email: String!,
-      role: RolesType!,
-      createdAt: DateTime
+      user: UserInput
     ): User!
 
     atualizaUser(
       id: ID!,
-      nome: String!,
-      ativo: Boolean!,
-      email: String!,
-      role: RolesType!
+      user: UserInput
     ): User!
 
     deletaUser(
