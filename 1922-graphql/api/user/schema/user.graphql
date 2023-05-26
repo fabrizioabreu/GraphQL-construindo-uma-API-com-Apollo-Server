@@ -43,11 +43,28 @@ scalar DateTime
     atualizaUser(
       id: ID!,
       user: UserInput
-    ): User!
+    ): atualizaUserResposta!
 
     deletaUser(
       id: ID!
-    ): ID!
+    ): deletaUserResposta!
+  }
+
+  interface respostaCustom {
+    # tipo abstrato
+    code: Int!
+    mensagem: String!
+  }
+
+  type deletaUserResposta implements respostaCustom {
+    code: Int!
+    mensagem: String!
+  }
+
+  type atualizaUserResposta implements respostaCustom {
+    code: Int!
+    mensagem: String!
+    user: User!
   }
 `
 
