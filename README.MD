@@ -38,4 +38,8 @@ npm install sqlite3
 
 # @graphql-tools/merge
 npm i graphql-tools
+
+# https://github.com/cvburgess/SQLDataSource
+npm install datasource-sql
+npm install knex --save
 ```
