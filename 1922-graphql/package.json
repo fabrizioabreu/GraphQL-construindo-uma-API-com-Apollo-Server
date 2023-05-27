@@ -22,6 +22,7 @@
     "apollo-datasource-rest": "^3.7.0",
     "apollo-server": "^2.17.0",
     "graphql": "^15.3.0",
+    "graphql-tools": "^9.0.0",
     "json-server": "^0.16.1",
     "nodemon": "^2.0.4",
     "sqlite3": "^5.1.6"

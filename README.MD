@@ -35,4 +35,7 @@ npm install apollo-datasource-rest
 
 # Instalando SQLite
 npm install sqlite3
+
+# @graphql-tools/merge
+npm i graphql-tools
 ```
