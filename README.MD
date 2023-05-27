@@ -32,4 +32,7 @@ npm install apollo-server
 
 # Datasource
 npm install apollo-datasource-rest
+
+# Instalando SQLite
+npm install sqlite3
 ```
