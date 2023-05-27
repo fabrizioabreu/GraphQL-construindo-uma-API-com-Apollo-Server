@@ -13,4 +13,4 @@ scalar DateTime
 
 `
 
-module exports = matriculaSchema 
+module.exports = matriculaSchema 
