@@ -22,7 +22,8 @@ const turmaResolvers = {
   },
  
   Turma: {
-    matriculas: (parent, _, { dataSources }) => dataSources.matriculasAPI.getMatriculasPorTurma(parent.id)
+    matriculas: (parent, _, { dataSources }) => dataSources.matriculasAPI.getMatriculasPorTurma(parent.id),
+    docente: (parent, _, { dataSources }) => dataSources.usersAPI.getUserById(parent.docente_id)
   }
 }
 
