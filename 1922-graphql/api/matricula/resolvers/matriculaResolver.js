@@ -15,7 +15,7 @@ const matricuaResolvers = {
   },
 
   Matricula: {
-    estudante: (parent, _, { dataSources }) => dataSources.userAPI.getUserById(parent.estudante_id),
+    estudante: (parent, _, { dataSources }) => dataSources.usersAPI.getUserById(parent.estudante_id),
     turma: (parent, _, { dataSources }) => dataSources.turmasAPI.getTurma(parent.turma_id)
   }
 }

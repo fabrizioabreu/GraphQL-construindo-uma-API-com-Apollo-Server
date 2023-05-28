@@ -16,6 +16,7 @@ class TurmasAPI extends SQLDataSource {
       .select('*')
       .from('turmas')
       .where({ id: Number(id)})
+
     return turma[0]
   }
 
@@ -24,9 +25,9 @@ class TurmasAPI extends SQLDataSource {
       .insert(novaTurma)
       .returning('id')
       .into('turmas')
-    
+      
     const turmaInserida = await this.getTurma(novaTurmaId[0])
-
+    
     return ({ turmaInserida })
   }
 

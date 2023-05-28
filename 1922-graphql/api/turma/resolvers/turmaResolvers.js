@@ -16,7 +16,7 @@ const turmaResolvers = {
   },
   
   Mutation: {
-    incluiTurma: (_, {turma}, { dataSources }) => dataSources.turmasAPI.incluiTurma(turma),
+    incluiTurma: (_, { turma }, { dataSources }) => dataSources.turmasAPI.incluiTurma(turma),
     atualizaTurma: (_, novosDados, { dataSources }) => dataSources.turmasAPI.atualizaTurma(novosDados),
     deletaTurma: (_, { id }, { dataSources }) => dataSources.turmasAPI.deletaTurma(id),
   },
