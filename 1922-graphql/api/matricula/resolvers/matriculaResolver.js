@@ -11,7 +11,9 @@ const matricuaResolvers = {
   }),
   
   Mutation: {
-    matricularEstudante: (_, ids, { dataSources }) => dataSources.matriculasAPI.matricularEstudante(ids)
+    matricularEstudante: (_, ids, { dataSources }) => dataSources.matriculasAPI.matricularEstudante(ids),
+    deletarMatricula: (_, { matricula }, { dataSources }) => dataSources.matriculasAPI.deletarMatricula(matricula),
+    cancelarMatricula: (_, { matricula }, { dataSources }) => dataSources.matriculasAPI.cancelarMatricula(matricula),
   },
 
   Matricula: {
