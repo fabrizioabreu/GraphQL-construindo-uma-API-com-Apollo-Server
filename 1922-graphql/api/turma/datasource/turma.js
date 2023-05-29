@@ -1,4 +1,5 @@
 const { SQLDataSource } = require('datasource-sql')
+const DataLoader = require('dataloader')
 
 class TurmasAPI extends SQLDataSource {
   constructor(dbConfig) {
@@ -56,6 +57,17 @@ class TurmasAPI extends SQLDataSource {
     return this.Resposta
   }
 
+  getTurmasCarregadas = new DataLoader(async idsTurmas => {
+    const turmas = await this.db
+      .select('*')
+      .from('turmas')
+      .whereIn('id', idsTurmas)
+ 
+ 
+    return idsTurmas
+      .map(id => turmas
+        .find(turma => turma.id === id))
+  })
 }
 
 module.exports = TurmasAPI
