@@ -42,4 +42,8 @@ npm i graphql-tools
 # https://github.com/cvburgess/SQLDataSource
 npm install datasource-sql
 npm install knex --save
+
+# Instalando Dataloader para problemas consulta n+1
+# https://github.com/graphql/dataloader
+npm i dataloader
 ```
